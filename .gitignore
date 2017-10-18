@@ -1,3 +1,14 @@
+#local config
+config/local.yml
+config/local.json
+
+# IDE
+.idea
+*.iml
+
+#OSX hidden metadata file
+.DS_Store
+
 # Logs
 logs
 *.log
