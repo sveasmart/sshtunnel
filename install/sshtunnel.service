@@ -1,0 +1,13 @@
+# systemd service script for the sshtunnel
+# https://www.freedesktop.org/software/systemd/man/bootup.html
+[Unit]
+Description=SSHTunnel
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/apps/sshtunnel/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
