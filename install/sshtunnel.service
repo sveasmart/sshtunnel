@@ -7,7 +7,7 @@ After=multi-user.target
 [Service]
 Type=simple
 ExecStart=/home/pi/apps/sshtunnel/start.sh
-Restart=on-failure
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
